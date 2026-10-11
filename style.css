@@ -1,0 +1,41 @@
+:root{box-sizing:border-box;
+padding-top:env(safe-area-inset-top,0px);
+padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f5f7f4;--c:#fff;--t:#1d2b24;--m:#5b6b62;
+--p:#1f7a54;--b:#d9e2dc;--ok:#d3f0df;--no:#f8d7d7
+}
+@media(prefers-color-scheme:dark){
+    :root:not([data-theme=light]){--bg:#101814;--c:#18241e;--t:#e6efe9;--m:#9bb0a4;--p:#46b588;--b:#2a3b32;--ok:#1d4a33;--no:#552626}}
+
+    *{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.5 system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+
+h1{font-size:22px;margin:8px 0 2px}
+.sub{color:var(--m);margin:0 0 14px}
+.tabs{display:flex;gap:8px;margin-bottom:14px}
+button{font:inherit;cursor:pointer}
+.tab,.opt,.btn{border:1px solid var(--b);background:var(--c);color:var(--t);border-radius:10px;padding:10px 14px}
+.tab{flex:1}.tab.on,.btn{background:var(--p);color:#fff;border-color:var(--p)}
+input{width:100%;padding:10px 12px;border:1px solid var(--b);border-radius:10px;background:var(--c);color:var(--t);font:inherit;margin-bottom:10px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1px solid var(--b);background:var(--c);color:var(--m);border-radius:99px;padding:4px 12px;font-size:14px}
+.chip.on{background:var(--p);color:#fff;border-color:var(--p)}
+details{background:var(--c);border:1px solid var(--b);border-radius:12px;margin-bottom:8px;padding:0 14px}
+summary{padding:12px 0;cursor:pointer;font-weight:600}
+summary small{color:var(--m);font-weight:400;margin-left:6px}
+.ar{font-family:Amiri,'Traditional Arabic',serif;font-size:28px;line-height:2;
+    direction:rtl;text-align:right;margin:0}
+    .mean{color:var(--m);padding-bottom:14px;margin:0}
+.card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:16px}
+.modes{display:grid;gap:8px}
+.modes .opt{text-align:left}
+.opt{display:block;width:100%;text-align:left;margin-top:8px}
+.opt.ok{background:var(--ok);border-color:var(--p)}
+.opt.no{background:var(--no)}
+.opt.arx{font-family:Amiri,serif;font-size:24px;text-align:center;direction:rtl}
+.bar{color:var(--m);font-size:14px;display:flex;justify-content:space-between;margin-bottom:8px}
+.blank{border-bottom:2px solid var(--p);padding:0 14px}
+.hide{display:none}

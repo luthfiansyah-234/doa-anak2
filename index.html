@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <title>Belajar Doa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+<h1>📖 Belajar Doa</h1>
+<p class="sub" id="sub"></p>
+<div class="tabs">
+    <button class="tab on" data-v="learn">Belajar</button>
+    <button class="tab" data-v="quiz">Kuis</button>
+</div>
+
+<section id="learn">
+<input id="q" placeholder="Cari doa atau arti…">
+<div class="chips" id="chips"></div>
+<div id="list"></div>
+</section>
+
+<section id="quiz" class="hide">
+<div id="menu" class="card"><b>Pilih jenis kuis (10 soal, tanpa suara)</b>
+<div class="modes">
+    <button class="opt" data-m="c">✍️ Lengkapi Doa — pilih kata Arab yang hilang</button>
+    <button class="opt" data-m="a">🔎 Tebak Arti — dari teks Arab ke artinya</button>
+    <button class="opt" data-m="t">🤲 Tebak Doa — dari arti ke nama doa</button>
+</div>
+</div>
+<div id="play" class="card hide"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
